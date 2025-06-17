@@ -1,6 +1,6 @@
-# Basic Arithmetic Calculator
+# Basic Arithmetic Calculator 
 
-#Definition of functions and returns
+#Definition of functions
 def add(a, b): #addition function
     return a + b
 def sub(a, b): #subtraction function
@@ -9,10 +9,10 @@ def mult(a, b): #multiplication function
     return a * b
 def div(a, b): #division function
     if (b == 0):
-        return "Syntax Error : cannot divide by 0"
+        return " Undefined : cannot divide by 0"
     return a / b
 
-#Loop for calculator(Infinity)
+#Loop for calculator 
 while True :
     print("\nChoose an operation:")
     print("Enter '1' for ADDITION(+)")
@@ -21,7 +21,7 @@ while True :
     print("Enter '4' for DIVISION(/)")
     print("Enter 'e' to exit")
 
-# show operations options for user to choose their for the calculation
+# show operations options for user to choose their operation for their calculations
     choice =input("\nEnter choice:").strip().lower()
 
     if (choice == 'e'):
