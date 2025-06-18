@@ -165,7 +165,3 @@ while True :
 
         #Display of result
         print(f" Ans : {round(result, 10)}") #This rounds the result to 10 decimal places
-
-
-
-
