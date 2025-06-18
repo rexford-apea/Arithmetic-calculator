@@ -9,12 +9,11 @@ def mult(a, b): #multiplication function
     return a * b
 def div(a, b): #division function
     if (b == 0):
-        return " Undefined : cannot divide by 0"
+        return "Syntax Error : cannot divide by 0"
     return a / b
 
 #Loop for calculator(Infinity)
 while True :
-    #Display options for execution
     print("\nChoose an operation:")
     print("Enter '1' for ADDITION(+)")
     print("Enter '2' for SUBTRACTION(-)")
@@ -22,7 +21,7 @@ while True :
     print("Enter '4' for DIVISION(/)")
     print("Enter 'e' to exit")
 
-# prompt for users to choose their for the calculation
+# show operations options for user to choose their for the calculation
     choice =input("\nEnter choice:").strip().lower()
 
     if (choice == 'e'):
@@ -44,19 +43,19 @@ while True :
 
 #Calculation(Using the initially stated functions) and selection of symbols to be used in final results display
     if (choice == '1'):
-        result = add(num1, num2) #variable for invoking function
+        result = add(num1, num2)
         operation = "+"
 
     elif (choice == '2'):
-        result = sub(num1, num2) #variable for invoking function
+        result = sub(num1, num2)
         operation = "-"
 
     elif (choice == '3'):
-        result = mult(num1, num2)  #variable for invoking function
+        result = mult(num1, num2)
         operation = '*'
 
     elif (choice == '4'):
-        result = div(num1, num2)  #variable for invoking function
+        result = div(num1, num2)
         operation = '/'
 
 #Display of final results
