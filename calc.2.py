@@ -4,60 +4,74 @@ import math  #Import for Mathematics library
 
 # Two-number operation :
 def add(a, b):
+    """Addition of two numbers"""
     return a + b
 
 def sub(a, b):
+    """Subtraction of two numbers"""
     return a - b
 
 def mul(a, b):
+    """Multiplication of two numbers"""
     return a * b
 
 def div(a, b):
+    """"Division of two numbers"""
     if b == 0 :
         return " Error : Undefined "
     return a / b
 
 def mod(a, b):
+    """Modulo of two numbers"""
     return a % b
 
 def exponent(a, b):
+    """Exponentiation"""
     return a ** b
 
 # One-number operations :
 def sine(a):
+    """Sine of a number"""
     # Convert degrees to radians before using Sine
     return math.sin(math.radians(a))
 
 def cosine(a):
+    """Cosine of a number"""
     #  Convert degrees to radians before using Cosine
     return math.cos(math.radians(a))
 
 def tangent(a):
+    """Tangent of a number"""
     #  Convert degrees to radians before using Tangent
     return math.tan(math.radians(a))
 
 def square_root(a):
+    """Square root of a number"""
     if a <= 0:
         return "Error : Positive integers only"
     return math.sqrt(a)
 
 def log(a):
+    """Logarithm of a number"""
     if a <= 0 :
         return " Error : undefined for zero and negative numbers"
     return math.log10(a)
 
 def natural_log(a):
+    """Natural log of a number"""
     if a <= 0 :
         return " Error : Cant natural log to zero"
     return math.log(a)
 
 def factorial(a):
+    """Factorial of a number"""
     # Check if the input is a non-negative integer
     if not a.is_integer() or a < 0 :
         return " Error : Positive integers only"
     return math.factorial(int(a))
 
 def absolute(a):
+    """Absolute of a number"""
     return math.fabs(a)
 
 
